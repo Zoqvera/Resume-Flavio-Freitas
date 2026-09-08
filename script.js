@@ -65,6 +65,8 @@ const translations = {
   'Site institucional desenvolvido para apresentar serviços, identidade de marca e oferta de cursos, com estrutura responsiva, chamadas para ação, integração de conversão e organização visual voltada à experiência do usuário.': 'Institutional website developed to present services, brand identity, and course offerings, with a responsive structure, calls to action, conversion integration, and user-centered visual organization.',
   'Projeto de e-commerce de moda personalizada, estruturado para apresentar produtos, fortalecer a identidade visual da marca e oferecer uma experiência de compra responsiva, clara e orientada à conversão.': 'Custom fashion e-commerce project structured to showcase products, strengthen the brand identity, and provide a responsive, clear, conversion-oriented shopping experience.',
   'Acessar NAZC ↗': 'Visit NAZC ↗',
+  'Plataforma digital de ensino de inglês desenvolvida para organizar conteúdos, recursos de aprendizagem e acesso de alunos, com experiência responsiva, estrutura de navegação clara, integração de analytics e otimização técnica para publicação e descoberta.': 'Digital English-learning platform developed to organize content, learning resources, and student access, with a responsive experience, clear navigation, analytics integration, and technical optimization for publishing and discoverability.',
+  'Acessar Teacher Flavius ↗': 'Visit Teacher Flavius ↗',
   '04 / FORMAÇÃO': '04 / EDUCATION',
   'Pesquisa avançada e transição aplicada para tecnologia': 'Advanced research and an applied transition into technology',
   'FORMAÇÃO ACADÊMICA': 'ACADEMIC BACKGROUND',
