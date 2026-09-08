@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Página não encontrada | Flávio Freitas</title>
+  <meta name="description" content="A página solicitada não foi encontrada no currículo e portfólio de Flávio Freitas." />
+  <meta name="robots" content="noindex, follow" />
+  <meta name="theme-color" content="#0b1020" />
+  <link rel="stylesheet" href="/Resume-Flavio-Freitas/styles.css" />
+  <style>
+    .error-page{min-height:100vh;display:grid;place-items:center;padding:32px}.error-card{width:min(720px,100%);text-align:center}.error-code{font-family:'JetBrains Mono',monospace;font-size:clamp(4rem,14vw,8rem);margin:0}.error-card h1{margin:8px 0 16px}.error-card p{color:var(--muted);line-height:1.7;max-width:620px;margin:0 auto 28px}
+  </style>
+</head>
+<body>
+  <main class="error-page">
+    <section class="error-card" aria-labelledby="error-title">
+      <p class="error-code" aria-hidden="true">404</p>
+      <h1 id="error-title">Página não encontrada</h1>
+      <p>O endereço pode ter sido digitado incorretamente ou a página pode ter sido movida. Use os atalhos abaixo para continuar navegando.</p>
+      <div class="hero-actions" style="justify-content:center">
+        <a class="button primary" href="/Resume-Flavio-Freitas/">Ir para o currículo</a>
+        <a class="button secondary" href="/Resume-Flavio-Freitas/academic.html">Currículo acadêmico</a>
+      </div>
+    </section>
+  </main>
+  <script>
+    (() => {
+      const redirects = new Map([
+        ['/Resume-Flavio-Freitas/index.html', '/Resume-Flavio-Freitas/'],
+        ['/Resume-Flavio-Freitas/academico', '/Resume-Flavio-Freitas/academic.html'],
+        ['/Resume-Flavio-Freitas/academico/', '/Resume-Flavio-Freitas/academic.html'],
+        ['/Resume-Flavio-Freitas/academic', '/Resume-Flavio-Freitas/academic.html'],
+        ['/Resume-Flavio-Freitas/curriculo-academico', '/Resume-Flavio-Freitas/academic.html'],
+        ['/Resume-Flavio-Freitas/curriculo-academico/', '/Resume-Flavio-Freitas/academic.html']
+      ]);
+      const destination = redirects.get(window.location.pathname);
+      if (destination) window.location.replace(destination);
+    })();
+  </script>
+</body>
+</html>
