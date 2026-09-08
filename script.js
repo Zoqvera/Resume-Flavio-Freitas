@@ -171,7 +171,6 @@ const mainNav = document.querySelector('.nav');
 const contactCta = document.querySelector('.hero-actions .button.secondary');
 const directContact = document.querySelector('#direct-contact');
 const whatsappUrl = 'https://wa.me/5521984193930?text=Ol%C3%A1%2C%20eu%20vi%20o%20seu%20curr%C3%ADculo%20e%20gostaria%20de%20conversar%20contigo.';
-const slackUrl = 'https://join.slack.com/t/zoqvera/shared_invite/zt-48wnmdjfr-cGna_1TzJPUHoyTNzXcXfA';
 
 function applyLanguage(lang) {
   const isEnglish = lang === 'en';
@@ -208,19 +207,11 @@ function applyLanguage(lang) {
     const label = directContact.querySelector('span');
     const value = directContact.querySelector('strong');
 
-    if (isEnglish) {
-      directContact.setAttribute('href', slackUrl);
-      directContact.setAttribute('target', '_blank');
-      directContact.setAttribute('rel', 'noopener noreferrer');
-      if (label) label.textContent = 'Slack';
-      if (value) value.textContent = 'Connect on Slack ↗';
-    } else {
-      directContact.setAttribute('href', 'mailto:flaviofreitas@ufu.br');
-      directContact.removeAttribute('target');
-      directContact.removeAttribute('rel');
-      if (label) label.textContent = 'E-mail';
-      if (value) value.textContent = 'flaviofreitas@ufu.br';
-    }
+    directContact.setAttribute('href', 'mailto:flaviofreitas@ufu.br');
+    directContact.removeAttribute('target');
+    directContact.removeAttribute('rel');
+    if (label) label.textContent = isEnglish ? 'Slack email' : 'E-mail';
+    if (value) value.textContent = 'flaviofreitas@ufu.br';
   }
 
   if (brand) brand.setAttribute('aria-label', isEnglish ? 'Go to top' : 'Ir para o início');
