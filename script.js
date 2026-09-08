@@ -25,7 +25,7 @@ const translations = {
   '34 anos': '34 years old',
   'Doutor em Linguística': 'Doctor in Linguistics',
   'Mestre em Linguística': 'Master in Linguistics',
-  'Pesquisador em tradução fala-a-fala': 'Speech-to-speech researcher',
+  'Pesquisador em interpretação automática': 'Automatic interpreting researcher',
   'Pesquisador em Bibliometria': 'Bibliometrics researcher',
   'Desenvolvedor Web': 'Web developer',
   'Desenvolvedor de software com foco em aplicações web, inteligência artificial e produtos digitais.': 'Software developer focused on web applications, artificial intelligence, and digital products.',
