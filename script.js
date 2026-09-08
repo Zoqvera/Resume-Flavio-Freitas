@@ -169,6 +169,8 @@ if (photoInstruction) {
 
 const brand = document.querySelector('.brand');
 const mainNav = document.querySelector('.nav');
+const contactCta = document.querySelector('.hero-actions .button.secondary');
+const whatsappUrl = 'https://wa.me/5521984193930?text=Ol%C3%A1%2C%20eu%20vi%20o%20seu%20curr%C3%ADculo%20e%20gostaria%20de%20conversar%20contigo.';
 
 function applyLanguage(lang) {
   const isEnglish = lang === 'en';
@@ -187,6 +189,18 @@ function applyLanguage(lang) {
 
   if (photoInstruction) {
     photoInstruction.innerHTML = isEnglish ? photoInstruction.dataset.enHtml : photoInstruction.dataset.ptHtml;
+  }
+
+  if (contactCta) {
+    if (isEnglish) {
+      contactCta.setAttribute('href', '#contato');
+      contactCta.removeAttribute('target');
+      contactCta.removeAttribute('rel');
+    } else {
+      contactCta.setAttribute('href', whatsappUrl);
+      contactCta.setAttribute('target', '_blank');
+      contactCta.setAttribute('rel', 'noopener noreferrer');
+    }
   }
 
   if (brand) brand.setAttribute('aria-label', isEnglish ? 'Go to top' : 'Ir para o início');
