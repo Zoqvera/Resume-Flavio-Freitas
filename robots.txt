@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zoqvera.github.io/Resume-Flavio-Freitas/sitemap.xml
