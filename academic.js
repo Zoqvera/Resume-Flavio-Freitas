@@ -20,6 +20,12 @@ const metaDescriptions = {
   en: 'Academic CV of Flávio de Sousa Freitas: education, research, publications, technical output, and events.'
 };
 
+const lattesSummary = document.querySelector('p[data-pt^="Doutorando em Estudos Linguísticos"]');
+if (lattesSummary) {
+  lattesSummary.dataset.pt = 'Doutor em Estudos Linguísticos pelo Programa de Pós-Graduação em Estudos Linguísticos da Universidade Federal de Uberlândia. Mestre em Estudos Linguísticos pelo mesmo programa e bacharel em Tradução (inglês-português) pela Universidade Federal de Uberlândia. Pesquisador membro do Grupo de Estudos e Pesquisa em Tradução, Tecnologias, Ensino e Cienciometria (GETTEC). Temas de interesse: tradução automática de fala; interpretação automática; cienciometria e bibliometria.';
+  lattesSummary.dataset.en = "PhD in Linguistic Studies from the Graduate Program in Linguistic Studies at the Federal University of Uberlândia. Master's degree in Linguistic Studies from the same program and bachelor's degree in Translation (English-Portuguese) from the Federal University of Uberlândia. Researcher and member of GETTEC — Research Group on Translation, Technologies, Teaching, and Scientometrics. Research interests: automatic speech translation, machine interpreting, scientometrics, and bibliometrics.";
+}
+
 function applyLanguage(lang) {
   const isEnglish = lang === 'en';
   document.documentElement.lang = isEnglish ? 'en' : 'pt-BR';
