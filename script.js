@@ -81,7 +81,6 @@ const translations = {
   'Disponível para oportunidades em tecnologia.': 'Available for opportunities in technology.',
   'Projetos, colaboração e posições relacionadas a desenvolvimento de software, aplicações web, inteligência artificial e produtos digitais.': 'Projects, collaboration, and positions related to software development, web applications, artificial intelligence, and digital products.',
   'E-mail': 'Email',
-  'adicione-seu-email@dominio.com': 'add-your-email@domain.com',
   'adicione seu perfil': 'add your profile',
   'Software • IA • Produtos Digitais': 'Software • AI • Digital Products'
 };
@@ -170,7 +169,9 @@ if (photoInstruction) {
 const brand = document.querySelector('.brand');
 const mainNav = document.querySelector('.nav');
 const contactCta = document.querySelector('.hero-actions .button.secondary');
+const directContact = document.querySelector('#direct-contact');
 const whatsappUrl = 'https://wa.me/5521984193930?text=Ol%C3%A1%2C%20eu%20vi%20o%20seu%20curr%C3%ADculo%20e%20gostaria%20de%20conversar%20contigo.';
+const slackUrl = 'https://join.slack.com/t/zoqvera/shared_invite/zt-48wnmdjfr-cGna_1TzJPUHoyTNzXcXfA';
 
 function applyLanguage(lang) {
   const isEnglish = lang === 'en';
@@ -200,6 +201,25 @@ function applyLanguage(lang) {
       contactCta.setAttribute('href', whatsappUrl);
       contactCta.setAttribute('target', '_blank');
       contactCta.setAttribute('rel', 'noopener noreferrer');
+    }
+  }
+
+  if (directContact) {
+    const label = directContact.querySelector('span');
+    const value = directContact.querySelector('strong');
+
+    if (isEnglish) {
+      directContact.setAttribute('href', slackUrl);
+      directContact.setAttribute('target', '_blank');
+      directContact.setAttribute('rel', 'noopener noreferrer');
+      if (label) label.textContent = 'Slack';
+      if (value) value.textContent = 'Connect on Slack ↗';
+    } else {
+      directContact.setAttribute('href', 'mailto:flaviofreitas@ufu.br');
+      directContact.removeAttribute('target');
+      directContact.removeAttribute('rel');
+      if (label) label.textContent = 'E-mail';
+      if (value) value.textContent = 'flaviofreitas@ufu.br';
     }
   }
 
