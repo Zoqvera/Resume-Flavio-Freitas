@@ -93,6 +93,48 @@ languageSwitcher.innerHTML = `
   <button type="button" class="language-button" data-lang="en" aria-label="English">EN</button>
 `;
 
+const languageStyles = document.createElement('style');
+languageStyles.textContent = `
+  .language-switcher {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-left: auto;
+    margin-right: 22px;
+    padding: 5px 8px;
+    border: 1px solid var(--line);
+    border-radius: 999px;
+    background: rgba(255,255,255,.035);
+    color: var(--muted);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: .72rem;
+  }
+  .language-button {
+    appearance: none;
+    border: 0;
+    background: transparent;
+    color: var(--muted);
+    cursor: pointer;
+    padding: 3px 5px;
+    border-radius: 999px;
+    font: inherit;
+    transition: color .2s ease, background .2s ease;
+  }
+  .language-button:hover { color: var(--text); }
+  .language-button.active {
+    color: var(--bg);
+    background: var(--text);
+    font-weight: 700;
+  }
+  @media (min-width: 721px) {
+    .nav { margin-left: auto; }
+  }
+  @media (max-width: 720px) {
+    .language-switcher { margin-left: auto; margin-right: 10px; }
+  }
+`;
+document.head.appendChild(languageStyles);
+
 if (navWrap && menuButton) {
   navWrap.insertBefore(languageSwitcher, menuButton);
 } else if (navWrap) {
