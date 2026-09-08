@@ -21,6 +21,7 @@ const translations = {
   'Projetos': 'Projects',
   'Formação': 'Education',
   'Contato': 'Contact',
+  'DESENVOLVIMENTO DE SOFTWARE • IA • PRODUTOS DIGITAIS': 'SOFTWARE DEVELOPMENT • AI • DIGITAL PRODUCTS',
   'Brasileiro': 'Brazilian',
   '34 anos': '34 years old',
   'Doutor em Linguística': 'PhD in Linguistics',
