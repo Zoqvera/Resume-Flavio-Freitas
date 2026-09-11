@@ -72,7 +72,7 @@ const translations = {
   'FORMAÇÃO ACADÊMICA': 'ACADEMIC BACKGROUND',
   'Doutorado em Estudos Linguísticos': 'PhD in Linguistic Studies',
   'Universidade Federal de Uberlândia — UFU': 'Federal University of Uberlândia — UFU',
-  'Acessar tese no Repositório Institucional da UFU ↗': 'Access doctoral thesis in the UFU Institutional Repository ↗',
+  'Acessar tese no Repositório Institucional da UFU ↗': 'Access doctoral dissertation in the UFU Institutional Repository ↗',
   'ÊNFASE ATUAL': 'CURRENT FOCUS',
   'Inteligência Artificial & Desenvolvimento de Software': 'Artificial Intelligence & Software Development',
   'Formação contínua e prática aplicada em desenvolvimento web, IA generativa, automação, bancos de dados, APIs, arquitetura de produtos digitais e ferramentas modernas de desenvolvimento.': 'Continuous learning and applied practice in web development, generative AI, automation, databases, APIs, digital-product architecture, and modern development tools.',
